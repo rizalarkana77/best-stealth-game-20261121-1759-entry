@@ -1,0 +1,39 @@
+/* Emberwick Vault — the page around the canvas. One job: centre the game
+   on a dark page and keep it readable at a glance. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #0b0d14;
+  color: #e8ecf4;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.frame {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+}
+
+canvas#game {
+  display: block;
+  width: min(1280px, 96vw);
+  height: auto;
+  background: #171a24;
+  border: 1px solid #2c3242;
+  border-radius: 8px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+}
+
+.foot {
+  margin: 0;
+  max-width: 1280px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #9fb4d8;
+  text-align: center;
+}
